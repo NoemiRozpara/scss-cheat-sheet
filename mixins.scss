@@ -1,0 +1,93 @@
+@mixin animation($value){
+	-webkit-animation: $value;
+	-moz-animation: $value;
+	-o-animation: $value;
+	-ms-animation: $value;
+	animation: $value;
+}
+
+@mixin border-radius($value){
+	-webkit-border-radius: $value;
+	-moz-border-radius: $value;
+	border-radius: $value;
+}
+
+@mixin border-radius-detailed($top_right, $bottom_right, $bottom_left, $top_left){
+	-webkit-border-top-right-radius: $top_right;
+	-webkit-border-bottom-right-radius: $bottom_right;
+	-webkit-border-top-left-radius: $bottom_left;
+	-webkit-border-bottom-left-radius: $top_left;
+
+	-moz-border-radius-topright: $top_right;
+	-moz-border-radius-bottomright: $bottom_right;
+	-moz-border-radius-topleft: $bottom_left;
+	-moz-border-radius-bottomleft: $top_left;
+
+	border-top-right-radius: $top_right;
+	border-bottom-right-radius: $bottom_right;
+	border-top-left-radius: $bottom_left;
+	border-bottom-left-radius: $top_left;
+}
+
+@mixin box-shadow($value){
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+	box-shadow: $value;	
+}
+
+@mixin column-count($count){
+    -webkit-column-count: $count;
+    -moz-column-count: $count;
+    column-count: $count;
+}
+
+@mixin column-gap($gap){
+    -webkit-column-gap: $gap;
+    -moz-column-gap: $gap;
+    column-gap: $gap;
+}
+
+@mixin column-rule($width, $line-style, $color){
+    -webkit-column-rule: $width $line-style $color;
+    -moz-column-rule: $width $line-style $color;
+    column-rule: $width $line-style $color;
+}
+
+@mixin filter($value){
+	-webkit-filter: $value;
+	filter: $value;
+}
+
+@mixin transform($value){
+	-webkit-transform: $value;
+	-moz-transform: $value;
+	-o-transform: $value;
+	transform: $value;
+}
+
+@mixin transition($value){
+	-webkit-transition: $value;
+	-moz-transition: $value;
+	-o-transition: $value;
+	transition: $value;
+}
+
+
+@mixin clip-path($value){
+	-webkit-clip-path: $value;
+	-moz-clip-path: $value;
+	clip-path: $value;
+}
+
+@mixin flex($value){
+	-webkit-box-flex: $value;
+	-webkit-flex: $value;
+    -ms-flex: $value;
+    flex: $value;
+}
+
+@mixin appearance($value){
+	appearance: $value;
+	-moz-appearance: $value;
+	-webkit-appearance: $value;
+}
